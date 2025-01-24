@@ -1,0 +1,12 @@
+//Tu archivo bin/www se encarga de iniciar el servidor:
+//Separar la lógica del servidor y la aplicación principal
+
+import app from "../../app.js";
+
+// Obtener el puerto desde las variables de entorno
+const port = process.env.PORT || 3001;
+
+// Iniciar el servidor directamente con app.listen
+app.listen(port, () => {
+  console.log(`Servidor ejecutándose correctamente en el puerto ${port}`);
+});

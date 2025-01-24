@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon src/bin/www",
+    "test": "jest"
   },
   "keywords": [
     "autenticación de usuarios"
@@ -22,6 +23,11 @@
     "mongoose": "^8.8.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.0.0"
   }
 }
