@@ -18,10 +18,6 @@ app.use(express.json());
 app.use('/usuarios', usersRouter);
 app.use('/iniciarSesion', loginRouter);
 
-app.get("/", (req, res) => {
-    res.send("Servidor ejecutándose correctamente");
-  });
-
 
 // Exportar la aplicación sin iniciar el servidor
 export default app;
