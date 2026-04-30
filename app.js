@@ -10,10 +10,12 @@ import cors from 'cors';
 import path from "path";
 import { fileURLToPath } from "url";
 
+
+
 // 2. configurar el uso de nuestro servidor y dependencias
 const app = express(); 
 dotenv.config(); 
-connectionMongo();
+// connectionMongo();
 app.use(cors()); 
 
 // configuraciones para acceder al front
